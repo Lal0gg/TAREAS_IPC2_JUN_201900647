@@ -8,7 +8,6 @@ class Lista_Doble_Enlasada(object):
     def __init__(self):
         self.cabeza=None
         self.cola=None
-        self.contador=0
 
     def Insertar(self,valor):
         nodo=NodoLista_Doble_Enlasada(valor)  
@@ -20,7 +19,6 @@ class Lista_Doble_Enlasada(object):
             nodo.anterior=self.cola
             self.cola.siguiente=nodo
             self.cola=nodo
-            self.contador+=1
 
     def recorrerLista(self):
         actual = self.cabeza
